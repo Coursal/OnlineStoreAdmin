@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Online Store - Insert</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+      
+    <body>
+        
+        <!-- to keep the fieldset width as much as the form elements are -->
+        <style type="text/css">
+            .fieldset-auto-width 
+            {
+                display: inline-block;
+            }
+        </style>
+        
+        
+        <h3>Online Store - Insert a product</h3>
+        <br>
+        <form name="adding_new_product" method="post" action="insert.jsp">
+            <fieldset class="fieldset-auto-width">
+                <legend>Enter the product's info</legend>
+                Barcode: <input type="text" name="product_barcode"><br>
+                Name: <input type="text" name="product_name"><br>
+                Price: <input type="text" name="product_price"><br>
+                Tax: <input type="text" name="product_tax"><br>
+                Description: <input type="text" name="product_descr"><br>
+
+                <input type="submit" value="Insert">
+            </fieldset>
+        </form>
+        
+        <br>
+        <a href="index.html">Back</a>
+        
+    </body>
+</html>
